@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotiCatcher.MainPage"
+             Title="">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0"
+                             Spacing="25">
+
+            <Label Text="Notification listener"
+                   Style="{StaticResource Headline}"
+                   SemanticProperties.HeadingLevel="Level1" />
+
+            <Button x:Name="BtnEnable"
+                    Text="Berechtigung erteilen"
+                    Clicked="BtnEnable_Clicked"
+                    HorizontalOptions="Fill" />
+
+            <Grid ColumnDefinitions="*,auto">
+
+                <Label
+                x:Name="PermissionStatusLabel"
+                Margin="0, 0, 0, 50"
+                Text="Berechtigung wird geprüft..."
+                FontSize="Medium"
+                HorizontalOptions="Center"
+                Grid.Column="0"/>
+
+                <ImageButton 
+                    Grid.Column="1"
+                    Source="refresh.png"
+                    Clicked="RefreshPermissions"
+                    WidthRequest="10"
+                    HeightRequest="10"                             
+                    Padding="5"
+                    HorizontalOptions="End" />
+            </Grid>
+
+
+            <Grid Padding="10"
+                  ColumnDefinitions="*, Auto">
+
+                <Entry x:Name="KeywordEntry"
+                       Placeholder="Schlüsselwort setzen"
+                       Grid.Column="0"
+                       HorizontalOptions="FillAndExpand" />
+
+                <ImageButton 
+                    Grid.Column="1"
+                    Source="save.png"
+                    Clicked="Save"
+                    WidthRequest="10"
+                    HeightRequest="10"                             
+                    Padding="5"
+                    HorizontalOptions="End" />
+
+            </Grid>
+
+
+            <Frame Margin="0,20,0,0"
+                   BackgroundColor="#f5f5f5"
+                   CornerRadius="12"
+                   Padding="15"
+                   HasShadow="True">
+
+                <Label Text="Willkommen bei NotiCatcher!&#10;&#10;Diese App durchsucht deine Benachrichtigungen nach einem bestimmten Schlüsselwort. Sobald dieses Schlüsselwort in einer Nachricht auftaucht, wirst du sofort durch starke Vibration alarmiert – auch wenn das Handy stumm ist.&#10;&#10;Bitte vergiss nicht, der App die notwendigen Berechtigungen zu erteilen und dein persönliches Schlüsselwort einzugeben."
+                       FontSize="Medium"
+                       TextColor="Black" />
+
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

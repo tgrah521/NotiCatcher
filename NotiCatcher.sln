@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotiCatcher", "NotiCatcher\NotiCatcher.csproj", "{E96C4666-1B0D-4C21-86A9-94A6DD44AEB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E96C4666-1B0D-4C21-86A9-94A6DD44AEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96C4666-1B0D-4C21-86A9-94A6DD44AEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96C4666-1B0D-4C21-86A9-94A6DD44AEB0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E96C4666-1B0D-4C21-86A9-94A6DD44AEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96C4666-1B0D-4C21-86A9-94A6DD44AEB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {228944A8-64F2-472F-95B1-A1C3819EF9AE}
+	EndGlobalSection
+EndGlobal
